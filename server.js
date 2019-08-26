@@ -12,7 +12,7 @@ var sub = redisClient(6379, '127.0.0.1');
 
 app.use(express.static('dist'));
 var server = http.createServer(app).listen(API_PORT);
-console.log('The HTTPS server is up and running');
+console.log('The HTTPS server is up and running', server);
 
 var io = IO(server);
 console.log('Socket Secure server is up and running.');

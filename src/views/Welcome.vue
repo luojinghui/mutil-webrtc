@@ -39,7 +39,7 @@
 <script>
 import * as config from '../../configure';
 
-const socket = io.connect("ws://www.luojh.com/webrtc");
+const socket = io.connect();
 
 export default {
   data() {

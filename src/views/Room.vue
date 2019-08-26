@@ -49,7 +49,7 @@
 <script>
 import * as config from '../../configure';
 
-const socket = io.connect(config.API_ROOT);
+const socket = io.connect();
 const configuration = {
   iceServers: [config.DEFAULT_ICE_SERVER],
 };

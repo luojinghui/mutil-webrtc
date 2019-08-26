@@ -1,6 +1,6 @@
 const API_PORT = '3001';
 
-// const API_ROOT = `http://localhost:${API_PORT}`;
+// const API_ROOT = `http://localhost:${API_PORT}/webrtc`;
 // const API_ROOT = `http://localhost:${API_PORT}`;
 const API_ROOT = `http://www.luojh.com/webrtc/`;
 
