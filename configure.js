@@ -2,7 +2,7 @@ const API_PORT = '3001';
 
 // const API_ROOT = `http://localhost:${API_PORT}`;
 // const API_ROOT = `http://localhost:${API_PORT}`;
-const API_ROOT = `wss://www.luojh.com`;
+const API_ROOT = `http://www.luojh.com/webrtc/`;
 
 const DEFAULT_ICE_SERVER = {
   url: 'turn:47.52.156.68:3478',
