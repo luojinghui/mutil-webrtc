@@ -53,7 +53,7 @@ import * as config from '../../configure';
 // const socket = io.connect();
 const socket = io.connect(config.API_ROOT, {
   // path: "/webrtc"
-  path: "/webrtc/webrtc"
+  // path: "/webrtc/webrtc"
 });
 const configuration = {
   iceServers: [config.DEFAULT_ICE_SERVER],

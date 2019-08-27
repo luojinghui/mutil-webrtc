@@ -41,7 +41,7 @@ import * as config from '../../configure';
 
 const socket = io.connect(config.API_ROOT, {
   // path: "/webrtc"
-  path: "/webrtc/webrtc"
+  // path: "/webrtc/webrtc"
 });
 
 export default {
