@@ -39,7 +39,9 @@
 <script>
 import * as config from '../../configure';
 
-const socket = io.connect();
+const socket = io.connect(config.API_ROOT, {
+  path: "/webrtc"
+});
 
 export default {
   data() {
