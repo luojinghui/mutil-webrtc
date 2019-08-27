@@ -1,9 +1,14 @@
 var express = require('express');
 var app = express();
-var http = require('http');
+var https = require('https');
 var fs = require('fs');
 var IO = require('socket.io');
 var { API_PORT } = require('./configure');
+
+var options = {
+  key: fs.readFileSync('./www.luojh.com.key'),
+  cert: fs.readFileSync('./www.luojh.com.pem'),
+};
 
 var redis = require('redis');
 var redisClient = redis.createClient;
@@ -11,7 +16,7 @@ var pub = redisClient(6379, '127.0.0.1');
 var sub = redisClient(6379, '127.0.0.1');
 
 app.use(express.static('dist'));
-var server = http.createServer(app).listen({
+var server = https.createServer(options, app).listen({
   port: API_PORT,
 });
 console.log('The HTTPS server is up and running');
